@@ -1,0 +1,7 @@
+~hopla/Downloads/muscle3.8.31_i86darwin64 -in Dengue-sero1.fasta -out Dengue-sero1-MUSCLE.fasta -maxiters 2 -diags
+
+
+
+~hopla/Downloads/clustal-omega-1.2.3-macosx  --auto -i Dengue-sero1.fasta  -o Dengue-sero1-CLUSTALO.fasta
+
+./clustal-omega-1.2.3-macosx  --auto -i 
