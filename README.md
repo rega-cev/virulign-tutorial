@@ -185,9 +185,9 @@ position in the protein (e.g., Table below).
 -   the option `Mutations` will output, for each sequence, a list of
     amino acids changes compared to the reference sequence (e.g., Table below).
 
- 
 |ID | Mutations |
-|Seq1 | -
+| ------ |-------|
+|Seq1 | - |
 |Seq2 | 2M |
 |Seq3 | 1L |
 
