@@ -359,7 +359,7 @@ accurate codon-correct alignment from a genome sequence dataset.
 ### Sequence dataset
 
 Genome sequence data of DENV-1 (i.e., Dengue Serotype 1) were collected
-from the Dengue Virus Variation Database ([link](www.ncbi.nlm.nih.gov/genomes/VirusVariation)) [@hatcher2017]. Only
+from the Dengue Virus Variation Database ([link](www.ncbi.nlm.nih.gov/genomes/VirusVariation)) [Hatcher et al, 2017]. Only
 full-length nucleotide sequences originating from a human host were
 retained and identical sequences were collapsed. From a total of 3539
 genome sequences, the corresponding serotype information was used to
@@ -382,8 +382,8 @@ folder](https://github.com/rega-cev/virulign-tutorial/examples-alignments/DENV):
 
 Alignments were constructed using the default or recommended parameters
 for each tool. The following versions were downloaded; VIRULIGN (v1.0),
-MAFFT (v7.313) [@katoh2014], MUSCLE (v3.8.31) [@edgar2004] and Clustal
-Omega (v1.2.3) [@sievers2011]. MUSCLE was used with the additional
+MAFFT (v7.313) [Katoh et al, 2014], MUSCLE (v3.8.31) [Edgar  et al, 204] and Clustal
+Omega (v1.2.3) [Sievers et al, 2011]. MUSCLE was used with the additional
 option `-diags`, which is intended for alignments of highly similar
 sequences. No additional parameters were used for the other programs,
 although for individual cases, the use of specific parameters could
@@ -432,9 +432,8 @@ computationally competitive with MAFFT.
 |clustalo | denv-1-clustalo.fasta | 760m|
 |virulign | denv-1-virulign.fasta | 19m46s|
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
-   ![ MAFFT (top window) and VIRULIGN (bottom window) constructed alignments visualized with SeaView. Stop codons are denoted by the presence of an asterisk.[]{data-label="fig:compare"}](Figure2.png "fig:")  
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure2.png)
+
 
 ### Annotation file
 
@@ -462,7 +461,7 @@ towards specific research applications.\
 In 2015, ZIKV caused a worldwide public health emergency, resulting in
 an intensive community effort to identify genomic correlates of disease
 manifestations of microcephaly and other neurological complications. As
-we have shown recently [@theys2017], the rapid advance in ZIKV genomics
+we have shown recently [Theys  et al, 2017], the rapid advance in ZIKV genomics
 resulted in inconsistencies that complicate the interpretation,
 reproducibility and comparison of findings from and across studies,
 particularly due to the lack of a consensus on the standardized and
@@ -476,9 +475,8 @@ More information on the corrected reference sequence can be found [at
 the Rega ZIKV reference sequence
 website](https://rega.kuleuven.be/cev/reference-sequences/rega-zikv) ([Link](rega.kuleuven.be/cev/reference-sequences/rega-zikv)).
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
-   ![Accurate ZIKV genome positions of the different proteins based on corrections made in the NCBI reference sequence NC\_012532.[]{data-label="fig:annotation"}](Figure3.png "fig:") 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure3.png)
+
 
 This example shows how the functionality of the XML configuration file,
 describing the genome annotation for all proteins, can greatly simplify
@@ -515,7 +513,7 @@ folder](https://github.com/rega-cev/virulign/references):
 
 Previous literature has shown variability of the glycosylation motif
 around positions 150 - 165 in the E protein, and this has been suggested
-to result from excessive *in vitro* passaging [@theys2017]. We used
+to result from excessive *in vitro* passaging [Theys et al, 2017]. We used
 VIRULIGN to create a position table of the amino acids in the alignment,
 annotated according to the respective protein. The following command was
 used:
@@ -559,9 +557,8 @@ illustrates the presence of a VNDT motif in viruses sampled from the
 recent epidemic, and an independence of the deletion regarding the host,
 year of collection and viral lineage (Figure below).
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
-   ![Variation in the glycosylation motif (red) of the ZIKV E protein across different hosts, virus lineage as well as date and country of collection. []{data-label="lbl:motif"}](Figure4.png "fig:")  
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure4.png)
+
 
 ### Scripts to select individual proteins
 
@@ -592,7 +589,7 @@ important structural proteins and enzymes, which are first translated as
 large poly-proteins. Gag and pol have overlapping ORFs, requiring a
 ribosomal frame shift to reveal the pol ORF. HIV-1 gag encodes for
 several structural proteins and is considered as a potential target for
-antiretroviral treatment [@tedbury2015hiv].
+antiretroviral treatment [Tedbury  et al, 2015].
 
 ### Sequence dataset
 
@@ -653,7 +650,7 @@ is an important drug target.
 ### Sequence dataset
 
 We downloaded a large set of reverse transcriptase sequences (N=111223)
-from the Stanford University HIV Drug Resistance Database [@Rhee2003],
+from the Stanford University HIV Drug Resistance Database [Rhee  et al, 2003],
 heterogeneous in length and mapping of the complete reverse
 transcriptase region. The resulting FASTA file ’HIVdb.fasta’ can be
 found in the [tutorial HIV-1
@@ -743,7 +740,7 @@ sequence 64344 which failed to be included in the final MSA.
 To further demonstrate that VIRULIGN provides accurate and fast
 codon-aware sequence alignments, we downloaded the set of sequences from
 Genbank, that were described in a recent publication by Chaplin et al.
-(2018) [@chaplin2018]. This study analyzed the distinct patterns of
+(2018) [Chaplin  et al, 2018]. This study analyzed the distinct patterns of
 thymidine analogue mutations with K65R in HIV-1 patients failing
 tenofovir-based antiretroviral therapy. We have added the sequence file
 ‘chaplin2018-sequences.fasta‘ to the [tutorial HIV-1
@@ -796,28 +793,28 @@ virus genomics. We provide a non-exhaustive list of examples:
 -   Identification of HIV-1 drug resistance mutations and the pathways
     emerging under drug selective pressure, as well as modeling the
     different factors leading to treatment failure and trends over time
-    [@ngcapu2017; @theys2013; @vercauteren2013; @vercauteren2008; @deforche2008a; @deforche2008b].
+    [Ngcapu  et al, 2017; Theys  et al, 2013; Vercauteren  et al, 2003; Vercauteren  et al, 2008; Deforche et al, 2008a; Deforche  et al, 2008b].
 
 -   Large-scale analysis of HIV-1 and HCV sequence datasets to explore
     genetic diversity at population level and to map structural and
     functional factors that shape viral evolution
-    [@abecasis2013; @li2015; @cuypers2015; @cuypers2016].
+    [Abecasis  et al, 2013; Li  et al, 2015; Cuypers  et al, 2015; Cuypers  et al, 2016].
 
 -   Evaluation of the annotation and representativeness of current
     reference genomes, and support of correcting the NCBI reference
-    sequence for the Zika virus [@theys2017].
+    sequence for the Zika virus [Theys  et al, 2017].
 
 -   Web-application to support surveillance and tracing of viral
     outbreaks (e.g., HIV-1 and DENV), necessitating efficient analysis
-    of large sequence databases and phylogenetic trees [@libin2017].
+    of large sequence databases and phylogenetic trees [Libin  et al, 2017].
 
 -   VIRULIGN was recently integrated into the RegaDB data management and
     analysis platform for the clinical follow-up of HIV-1 patients
-    [@vercauteren2013; @libin2013].
+    [Vercauteren  et al, 2013;  Libin  et al, 2013].
 
 -   Evaluation of an automated framework for the virus typing (HIV-1,
     Dengue, Zika and other viruses) and resistance interpretation
-    algorithms [@pineda2013; @snoeck2006; @theys2015]
+    algorithms [Pineda et al, 2013; Snoeck  et al, 2006; Theys  et al, 2015].
 
 
 References
