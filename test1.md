@@ -1,11 +1,14 @@
-
-
-Supplementary material  for VIRULIGN:  fast codon-correct alignment and annotation of viral genomes
-Pieter Libin, Koen Deforche, Ana B. Abecasis, Kristof Theys
-
-
-Introduction
+Tuturial on the use of VIRULIGN
 ================
+
+
+This pages decribes the instructions for download and use of VIRULIGN for viral sequence data, with an explanation of all optional parameters. This repository also contains a PDF version of this tutorial.  In this document, three example datasets (Dengue virus, Zika virus and HIV-1) are described where VIRULIGN was used to generate research-relevant output formats of the constructed codon-correct multiple sequence alignments.  
+
+
+Rationale
+---------------------------------------
+
+
 Virus sequence data are an essential resource for reconstructing
 spatiotemporal dynamics of viral spread as well as treatment and
 prevention strategies. However, the potential benefit of using sequence
@@ -30,9 +33,10 @@ Subsequently a multiple sequence alignment $MSA(r,T)$ is constructed
 based on all codon-correct (cc) pairwise aligned target sequences
 $A_{cc}(r,t)$ (Figure below).
 
-  --------------------------------------------------------------------------------------------------------------------------- --
-   ![Schema of the VIRULIGN alignment process[]{data-label="fig:schema"}](Figure1.png "fig:")
-  --------------------------------------------------------------------------------------------------------------------------- --
+
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure1.png)
+
+ 
 
 The most recent version and executable of VIRULIGN can be downloaded
 from the [GitHub project web
