@@ -28,10 +28,10 @@ VIRULIGN operates by aligning each target sequence (i.e., $t \in T$) of
 the input file codon-correctly against the reference sequence ($r$).
 Subsequently a multiple sequence alignment $MSA(r,T)$ is constructed
 based on all codon-correct (cc) pairwise aligned target sequences
-$A_{cc}(r,t)$ (Figure \[fig:schema\]).
+$A_{cc}(r,t)$ (Figure below).
 
   --------------------------------------------------------------------------------------------------------------------------- --
-   ![Schema of the VIRULIGN alignment process[]{data-label="fig:schema"}](Figure1.eps "fig:")
+   ![Schema of the VIRULIGN alignment process[]{data-label="fig:schema"}](Figure1.png "fig:")
   --------------------------------------------------------------------------------------------------------------------------- --
 
 The most recent version and executable of VIRULIGN can be downloaded
@@ -413,7 +413,7 @@ folder](https://github.com/rega-cev/virulign-tutorial/examples-alignments/DENV):
 From this evaluation, it can be observed that VIRULIGN is able to handle
 insertions and deletions without disrupting the reading frame and
 resulting in the absence of stop codons within the alignment, while
-maintaining quality of the alignment. Figure \[fig:compare\] visualises
+maintaining quality of the alignment. Figure below visualises
 a selected window from constructed alignments to illustrate the
 codon-correctness of VIRULIGN. We recorded the time needed for each
 alignment construction (Table below). (Performed on a 3.6 GHz Intel Core i7 CPU with 12 GB of RAM, where each application had access to 1 CPU core.) This evaluation
@@ -467,13 +467,13 @@ match virus strains sampled from the global epidemic or showed high
 level of heterogeneity in reported peptide lengths across their genome
 annotations.\
 To mitigate these concerns, we provided a correction with respect to the
-NCBI reference sequence NC\_012532 for ZIKV (Figure \[fig:annotation\]).
+NCBI reference sequence NC\_012532 for ZIKV (Figure below).
 More information on the corrected reference sequence can be found [at
 the Rega ZIKV reference sequence
 website](https://rega.kuleuven.be/cev/reference-sequences/rega-zikv) ([Link](rega.kuleuven.be/cev/reference-sequences/rega-zikv)).
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
-   ![Accurate ZIKV genome positions of the different proteins based on corrections made in the NCBI reference sequence NC\_012532.[]{data-label="fig:annotation"}](Figure3.pdf "fig:") 
+   ![Accurate ZIKV genome positions of the different proteins based on corrections made in the NCBI reference sequence NC\_012532.[]{data-label="fig:annotation"}](Figure3.png "fig:") 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
 
 This example shows how the functionality of the XML configuration file,
@@ -553,10 +553,10 @@ The relevant region in the CSV file looks like:
 When additional meta-data is given as well, this analysis clearly
 illustrates the presence of a VNDT motif in viruses sampled from the
 recent epidemic, and an independence of the deletion regarding the host,
-year of collection and viral lineage (Figure \[lbl:motif\]).
+year of collection and viral lineage (Figure below).
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
-   ![Variation in the glycosylation motif (red) of the ZIKV E protein across different hosts, virus lineage as well as date and country of collection. []{data-label="lbl:motif"}](Figure4.pdf "fig:")  
+   ![Variation in the glycosylation motif (red) of the ZIKV E protein across different hosts, virus lineage as well as date and country of collection. []{data-label="lbl:motif"}](Figure4.png "fig:")  
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --
 
 ### Scripts to select individual proteins
@@ -727,7 +727,7 @@ the subset of 34 sequences with VIRULIGN using the following command
 
 Each alignment in the folder ‘Failed‘ can be subjected to closer
 inspection in order to investigate the reason for the exclusion of the
-sequence from the alignment. Figure \[fig:failed\] shows an example of
+sequence from the alignment. Figure below shows an example of
 sequence 64344 which failed to be included in the final MSA.
 
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --
@@ -755,10 +755,11 @@ this dataset: respectively 92 times the K65R mutation was detected and
 145 times the K103N mutation. This number matches exactly the mutation
 frequencies obtained using the Stanford HIVdb pipeline that was
 used in the study of Chaplin et al., supporting the confidence of
-VIRULIGN to retrieve accurate alignments.\
+VIRULIGN to retrieve accurate alignments.
+
 For comparison purposes, we also constructed a MSA of this set of
 sequences with VIRULIGN and with MAFFT, and subsequently trimmed to the
-first position of RT. Figure \[fig:chaplin\] provides a visual
+first position of RT. Figure below provides a visual
 inspection of the two constructed alignments, and an illustration of the
 codon-awareness of VIRULIGN. It can be seen that insertions cause
 frameshifts and the inclusion of stop codons in the MAFFT alignment,
