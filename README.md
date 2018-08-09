@@ -27,11 +27,11 @@ VIRULIGN has support for standardized genome annotation and implements
 various alignment export formats that are useful for various research
 applications. VIRULIGN is an open-source project written in the C++
 programming language and available under the GPLv2 license.\
-VIRULIGN operates by aligning each target sequence (i.e., $t \in T$) of
-the input file codon-correctly against the reference sequence ($r$).
-Subsequently a multiple sequence alignment $MSA(r,T)$ is constructed
+VIRULIGN operates by aligning each target sequence (i.e., t in T) of
+the input file codon-correctly against the reference sequence (r).
+Subsequently a multiple sequence alignment MSA(r,T) is constructed
 based on all codon-correct (cc) pairwise aligned target sequences
-$A_{cc}(r,t)$ (Figure below).
+A_{cc}(r,t) (Figure below).
 
 
 ![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure1.png)
