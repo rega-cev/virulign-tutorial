@@ -731,9 +731,10 @@ inspection in order to investigate the reason for the exclusion of the
 sequence from the alignment. Figure below shows an example of
 sequence 64344 which failed to be included in the final MSA.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --
-   ![Example of a failed sequence due to the presence of a stop codon and additional single nucleotide deletions requiring frameshift corrections.[]{data-label="fig:failed"}](Figure5.png "fig:") 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --
+
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure5.png)
+
+
 
 ### Detection of drug resistance mutations
 
@@ -780,9 +781,8 @@ With VIRULIGN:
         --exportWithInsertions no 
         --exportReferenceSequence yes  > chaplin2018-sequences-virulign.fasta
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --
-   ![Comparison of MSA’s constructed with MAFFT (upper panel) and VIRULIGN (lower panel), translated into amino acids and visualised with SeaView.[]{data-label="fig:chaplin"}](Figure6.png "fig:")
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ --
+![alt text](https://github.com/rega-cev/virulign-tutorial/blob/master/figures/Figure6.png)
+
 
 List of case study examples
 ---------------------------
