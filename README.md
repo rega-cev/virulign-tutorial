@@ -294,7 +294,7 @@ aim for well-curated annotations of reference genomes for all virus
 pathogens. However, the creation of a XML file can be based on
 information provided within a Genbank description of the respective
 (reference) genome. To facilitate this transfer for the user community,
-a python script has been made to extract relevant information from a
+a python (v2) script has been made to extract relevant information from a
 Genbank description file into the format of a VIRULIGN annotation file,
 which can be found at the [GitHub repository of VIRULIGN
 tools](https://github.com/rega-cev/virulign-tools).
