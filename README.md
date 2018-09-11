@@ -315,10 +315,11 @@ nucleotide position of the respective ORF in the reference genome.
 To demonstrate the working of this script with a relevant example, we
 downloaded the Genbank INSDSEQ XML file for the reference genome
 NC\_001477 ([link](www.ncbi.nlm.nih.gov/nuccore/NC\_001477)) of Dengue Serotype 1. The Genbank XML file is available
-at the [tutorial web page](https://github.com/rega-cev/virulign-tutorial). The command needed
-for conversion is:
+at the [tutorial web page](https://github.com/rega-cev/virulign-tutorial). As the Dengue virus has only one ORF, we will generate one virulign XML file. When you open the Genbank file, and look for the CDS, you find that the ORF is located in the genome at position 95 until position 10273.  
 
-    $ python genbank_to_virulign.py NC_001477.gbc.xml  DENV1 95 10273
+Consequently, the command needed to convert the CDS to a virulign XML is:
+
+    $ python genbank_to_virulign.py NC_001477.gbc.xml DENV1 95 10273
      
 
 The output of this command may need to be improved into a correct
@@ -330,6 +331,12 @@ be conflicting as they overlap in genome positioning.
     < ... "protein pr" startPosition="343" stopPosition="616" />
     < ... "membrane glycoprotein M" startPosition="616" stopPosition="841" />
     < ... "envelope protein E" startPosition="841" stopPosition="2326" />
+
+In order to verify that your virulign XML file is correct, you can invoke virulign to use the XML file and align the full sequence you're trying to describe. When using virulign tabular export format, in combination with the amino acid representation, you will be able to investigate the annotated amino acid alignment. In order to do this, use this command:
+    $ virulign NC_001477.virulign.xml NC_001477.fasta --exportKind PositionTable--exportAlphabet AminoAcids 
+
+Please note that the abilities of our script to be able to extract the CDS with all its features depends on how accurately it was described in GenBank. 
+If you experience any problems to perform this procedure for your virus of interest, please let us know, and we will try to help you out. 
 
 Examples
 ========
