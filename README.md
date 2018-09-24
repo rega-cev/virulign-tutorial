@@ -253,6 +253,10 @@ allows to inspect each failed target sequence individually to understand
 why the target sequence did not pass the quality control of the
 alignment. Subsequently, errors in the target sequence can be corrected.
 
+
+Alignment annotation 
+---------------------
+
 A reference sequence can be either provided to VIRULIGN in FASTA format
 or embedded in an XML file. In this XML file, also an annotation of the
 different proteins, regions or other structures can be given by the
@@ -287,7 +291,8 @@ tabular format.
 |Seq3 | X | Y | … | D | …
 |Seq4 | R | M | … | D | …
 
-### Converting Genbank file to XML file 
+Converting Genbank file to XML file 
+----------------------------------
 
 Currently, the direct use of a Genbank XML file is not supported, as we
 aim for well-curated annotations of reference genomes for all virus
@@ -305,7 +310,7 @@ The command to run the script file for the conversion of the Genbank XML
 file is:
 
     $ python genbank_to_virulign.py genbank_insdseq.xml 
-    orf-name seq-start seq-end
+         orf-name seq-start seq-end
      
 
 The parameter `orf-name` will set the name for the defined ORF, while
