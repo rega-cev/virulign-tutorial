@@ -4,6 +4,10 @@ Tuturial on the use of VIRULIGN
 
 This pages decribes the instructions for download and use of VIRULIGN for viral sequence data, with an explanation of all optional parameters. This repository also contains a PDF version of this tutorial.  In this document, three example datasets (Dengue virus, Zika virus and HIV-1) are described where VIRULIGN was used to generate research-relevant output formats of the constructed codon-correct multiple sequence alignments.  
 
+### Citation 
+VIRULIGN has been published in Bioinformatics. If you use the software for your analysis, please cite VIRULIGN by the following citation: 
+" P. Libin, K. Deforche, A.B. Abecasis and K. Theys; VIRULIGN: fast codon-correct alignment and annotation of viral genomes; 2018; Bioinformatics; doi: 10.1093/bioinformatics/bty851 "
+
 
 Rationale
 ---------------------------------------
